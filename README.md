@@ -384,3 +384,14 @@ for (let i = 1; i <= 100; i++) {
 **Stanford Alpaca**: No tengo boca, pero debo gritar.
 
 **text-davinci-003**: No tengo boca pero debo gritar.
+
+
+### 问题：
+### 跑到200 steps就 OOM 醉了真是
+
+upgrading transformers to the dev version pip install git+https://github.com/huggingface/transformers seems to have resolved it.
+bitsandbytes==0.37.2 also works
+
+### LLaMa
+
+https://huggingface.co/decapoda-research/llama-7b-hf/tree/main
